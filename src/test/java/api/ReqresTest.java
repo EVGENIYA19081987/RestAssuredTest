@@ -76,7 +76,7 @@ public class ReqresTest {
     public void successRegTest() {
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecOK200());
         Integer id = 4;
-        String token = "QpwL5tke4Pnpja7X4";
+        String token = "здесь должен быть токен";
         Register user = new Register("eve.holt@reqres.in", "pistol");
         SuccessReg successReg = given()
                 .body(user)
